@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿FORMS:
+1. frm_login
+2. frm_main
+3. frm_viewBusiness
+4. frm_generateBill
+5. frm_changeWaterCharge
+6. frm_changeWaterLevel
 
+functions for frm_login:
 
-//dog loves cat
-
-namespace Scot_Water_Application.dog
-{
-    internal class cat
-    {
-    }
-}
