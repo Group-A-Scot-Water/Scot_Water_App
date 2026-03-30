@@ -2,12 +2,29 @@
 1. frm_login
 2. frm_main
 3. frm_viewBusiness
-4. frm_generateBill
-5. frm_changeWaterCharge
-6. frm_changeWaterLevel
+4. frm_addMeterReading
+5. frm_generateBill
+6. frm_changeWaterCharge
+7. frm_changeWaterLevel
 
 
-commonMethods:
+//============================================================================//
+//========================global variables====================================//
+//============================================================================//
+
+	string[] errorMessages = [
+		"Invalid email format. Please enter a valid email address.",
+		"Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.",
+		"Meter reading must be a positive integer.",
+		"Failed to submit meter reading. Please try again."
+	]
+
+	string selectedBusinessId; // to store the businessId selected from frm_viewBusiness, and pass it to frm_addMeterReading and frm_generateBill
+	Buiness selectedBusiness; // to store the business information retrieved from database, and pass it to frm_viewBusiness and frm_generateBill
+
+//============================================================================//
+//========================common methods======================================//
+//============================================================================//
 	1. validateEmail(string) => boolean
 	2. validatePassword(string) => boolean
 	3. exitApplication() => void	
@@ -22,7 +39,9 @@ commonMethods:
 				// display business info into the form w/ corresponding labels
 			}
 	    }
-
+	7. validateMeterReading(int reading) => boolean
+		if meterReading is a positive integer, return true, else return false
+	8. displayErrorMessage(string message) => void
 
 //============================================================================//
 //========================methods for frm_login===============================//
@@ -59,5 +78,34 @@ commonMethods:
 
 	//  display business info into the form
 	3. displayBusinessInfo(object business) => void
+
+	4. exitApplication()
+
+//============================================================================//
+//========================methods for frm_addMeterReading=====================//
+//============================================================================//
+
+	1. loadBusinessNames() 
+		if businessId has been passed from frm_viewBusiness, 
+		choose corresponding business name in the drop down menu
+
+	2. submitMeterReading(string businessId, int meterReading, int recycleReading) => {
+		if validateMeterReading(meterReading) &&  validateMeterReading(recycleReading) {
+			// submit the meter reading to database
+			if 3. submitMeterReadingToDatabase(businessId, meterReading, recycleReading) == true {
+				// display success message to user
+				return true;
+			} else {
+				// display error message to user
+				return false
+			}
+		} else {
+			// display error message to user
+			return false;
+		}
+	}
+
+	*** for 3. submitMeterReadingToDatabase(), except the 3 passed in parameters,***
+	*** it will need to generate a timestamp/ date_time to record when the meter reading is submitted ***
 
 	4. exitApplication()
