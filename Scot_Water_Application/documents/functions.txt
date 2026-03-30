@@ -6,5 +6,36 @@
 5. frm_changeWaterCharge
 6. frm_changeWaterLevel
 
-functions for frm_login:
 
+commonMethods:
+	validateEmail(string) => boolean
+	validatePassword(string) => boolean
+	exitApplication() => void	
+
+
+//============================================================================//
+//========================methods for frm_login===============================//
+//============================================================================//
+
+	valiateLogin(){
+		if validateEmail() && validatePassword() {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	exitApplication()
+
+//============================================================================//
+//========================methods for frm_main================================//
+//============================================================================//
+	
+	*** just bunch of click events then take the user to the respective forms, ***
+	*** no specific function needed here ***
+
+	exitApplication()
+
+//============================================================================//
+//========================methods for frm_viewBusiness========================//
+//============================================================================//
