@@ -25,13 +25,18 @@
 //============================================================================//
 //========================common methods======================================//
 //============================================================================//
+
 	1. validateEmail(string) => boolean
+
 	2. validatePassword(string) => boolean
+
 	3. exitApplication() => void	
 
 	// get the list of business name from database
 	4. loadBusinessNames() =>  string[]
+
 	5. getBusinessInfo(string businessId) => object class Business{}
+
 	6. displayBusinessInfo(obj business, frmName){
 		if frmName == "frm_viewBusiness" {
 				// display business info into the form w/ corresponding labels
@@ -39,9 +44,13 @@
 				// display business info into the form w/ corresponding labels
 			}
 	    }
+
 	7. validateMeterReading(int reading) => boolean
 		if meterReading is a positive integer, return true, else return false
-	8. displayErrorMessage(string message) => void
+
+	8. loadWaterCharge() => object class WaterCharge{} // including consumeCharge, recycleCharge, and waterLevelCharge
+
+	9. displayErrorMessage(string message) => void
 
 //============================================================================//
 //========================methods for frm_login===============================//
@@ -118,7 +127,7 @@
 //============================================================================//
 
 
-	1. loadWaterCharge() => return obj_waterCharge{}
+	1. loadWaterCharge() 
 
 	2. loadBusinessNames() 
 		if businessId has been passed from frm_viewBusiness, 
@@ -141,3 +150,28 @@
 	7. generateBill(Business obj_business, waterMeterRead, recycleMeterReading, totalAmount) => void
 
 	8. exitApplication()
+
+//============================================================================//
+//========================methods for frm_changeWaterCharge===================//
+//============================================================================//
+
+	1. loadMeterReading()
+
+	2. validateNewCharge(float reading) // for both consumedWater and recycleWater, 
+	
+	3. submitNewWaterCharge(new) => boolean
+
+	4. exitApplication()
+
+
+//============================================================================//
+//========================methods for frm_changeWaterLevel====================//
+//============================================================================//
+
+	1. loadCurrentWaterLevel()
+
+	2. validateNewWaterLevel(float reading) 
+	
+	3. submitNewWaterLevel() => boolean
+
+	4. exitApplication()
