@@ -62,7 +62,7 @@
     <Compile Include="Billing.Designer.cs">
       <DependentUpon>Billing.cs</DependentUpon>
     </Compile>
-    <Compile Include="dog\cat.cs" />
+    <Content Include="documents\functions.txt" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
