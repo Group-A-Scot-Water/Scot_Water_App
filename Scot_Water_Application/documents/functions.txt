@@ -20,7 +20,7 @@
 	]
 
 	string selectedBusinessId; // to store the businessId selected from frm_viewBusiness, and pass it to frm_addMeterReading and frm_generateBill
-	Buiness selectedBusiness; // to store the business information retrieved from database, and pass it to frm_viewBusiness and frm_generateBill
+	Buiness obj_selectedBusiness; // to store the business information retrieved from database, and pass it to frm_viewBusiness and frm_generateBill
 
 //============================================================================//
 //========================common methods======================================//
@@ -74,7 +74,7 @@
 	1. loadBusinessNames() 
 
 	//pass into businessId, get the business information from database
-	2. getBusinessInfo(string businessId) => object class Business{}
+	2. getBusinessInfo(string businessId) => Business obj_selectedBusiness
 
 	//  display business info into the form
 	3. displayBusinessInfo(object business) => void
@@ -97,15 +97,47 @@
 				return true;
 			} else {
 				// display error message to user
+				displayErrorMessage()
 				return false
 			}
 		} else {
 			// display error message to user
+			displayErrorMessage()
 			return false;
 		}
 	}
 
 	*** for 3. submitMeterReadingToDatabase(), except the 3 passed in parameters,***
 	*** it will need to generate a timestamp/ date_time to record when the meter reading is submitted ***
-
+	*** so businesId, meterReading, recycleReading, timestamp will be the 4 parameters needed to submit to database *** 
+	
 	4. exitApplication()
+
+//============================================================================//
+//========================methods for frm_generateBill========================//
+//============================================================================//
+
+
+	1. loadWaterCharge() => return obj_waterCharge{}
+
+	2. loadBusinessNames() 
+		if businessId has been passed from frm_viewBusiness, 
+		choose corresponding business name in the drop down menu
+
+	3. getBusinessInfo(string businessId) => {
+			//get the business information from the global variable selectedBusiness
+			if obj_selectedBusiness is empty {
+				// get the business information from database
+				obj_selectedBusiness = 4. getBusinessInfo(businessId)
+				return getBusinessInfo(businessId)
+
+			return obj_selectedBusiness
+	   }
+		
+	5. loadMeterReading(string businessId) => return [waterMeterReading, recycleMeterReading]
+
+	6. calculateBill(waterMeterRead, recycleMeterReading, obj_waterCharge) => return totalAmount
+
+	7. generateBill(Business obj_business, waterMeterRead, recycleMeterReading, totalAmount) => void
+
+	8. exitApplication()
