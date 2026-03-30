@@ -8,16 +8,27 @@
 
 
 commonMethods:
-	validateEmail(string) => boolean
-	validatePassword(string) => boolean
-	exitApplication() => void	
+	1. validateEmail(string) => boolean
+	2. validatePassword(string) => boolean
+	3. exitApplication() => void	
+
+	// get the list of business name from database
+	4. loadBusinessNames() =>  string[]
+	5. getBusinessInfo(string businessId) => object class Business{}
+	6. displayBusinessInfo(obj business, frmName){
+		if frmName == "frm_viewBusiness" {
+				// display business info into the form w/ corresponding labels
+			} else if frmName == "frm_generateBill" {
+				// display business info into the form w/ corresponding labels
+			}
+	    }
 
 
 //============================================================================//
 //========================methods for frm_login===============================//
 //============================================================================//
 
-	valiateLogin(){
+	1. valiateLogin(){
 		if validateEmail() && validatePassword() {
 			return true;
 		} else {
@@ -25,7 +36,7 @@ commonMethods:
 		}
 	}
 
-	exitApplication()
+	2. exitApplication()
 
 //============================================================================//
 //========================methods for frm_main================================//
@@ -34,8 +45,19 @@ commonMethods:
 	*** just bunch of click events then take the user to the respective forms, ***
 	*** no specific function needed here ***
 
-	exitApplication()
+	1. exitApplication()
 
 //============================================================================//
 //========================methods for frm_viewBusiness========================//
 //============================================================================//
+
+	//load the list of business into drop down menu
+	1. loadBusinessNames() 
+
+	//pass into businessId, get the business information from database
+	2. getBusinessInfo(string businessId) => object class Business{}
+
+	//  display business info into the form
+	3. displayBusinessInfo(object business) => void
+
+	4. exitApplication()
