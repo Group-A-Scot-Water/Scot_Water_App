@@ -118,29 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txtEmail.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtUserEmail.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 24pt</value>
   </data>
-  <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtUserEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>309, 140</value>
   </data>
-  <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtUserEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>299, 44</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtEmail.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtUserEmail.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txtEmail.Name" xml:space="preserve">
-    <value>txtEmail</value>
+  <data name="&gt;&gt;txtUserEmail.Name" xml:space="preserve">
+    <value>txtUserEmail</value>
   </data>
-  <data name="&gt;&gt;txtEmail.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtUserEmail.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtEmail.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtUserEmail.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtEmail.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtUserEmail.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
@@ -225,37 +225,37 @@
   <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblUserEmail.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblUserEmail.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 24pt, style=Bold</value>
   </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblUserEmail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblUserEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>97, 143</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lblUserEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 37</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblUserEmail.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="lblUserEmail.Text" xml:space="preserve">
     <value>User Email:</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;lblUserEmail.Name" xml:space="preserve">
+    <value>lblUserEmail</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblUserEmail.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblUserEmail.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblUserEmail.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
