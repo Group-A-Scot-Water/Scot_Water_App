@@ -56,55 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Billing.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Billing.Designer.cs">
-      <DependentUpon>Billing.cs</DependentUpon>
-    </Compile>
     <Content Include="documents\functions.txt" />
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Main Menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main Menu.Designer.cs">
-      <DependentUpon>Main Menu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Meter Readings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Meter Readings.Designer.cs">
-      <DependentUpon>Meter Readings.cs</DependentUpon>
-    </Compile>
     <Compile Include="Models\Businesses.cs" />
     <Compile Include="Models\Readings.cs" />
     <Compile Include="Models\ScotWaterContext.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View Businesses.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View Businesses.Designer.cs">
-      <DependentUpon>View Businesses.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Billing.resx">
-      <DependentUpon>Billing.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Main Menu.resx">
-      <DependentUpon>Main Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Meter Readings.resx">
-      <DependentUpon>Meter Readings.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -115,9 +73,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="View Businesses.resx">
-      <DependentUpon>View Businesses.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
