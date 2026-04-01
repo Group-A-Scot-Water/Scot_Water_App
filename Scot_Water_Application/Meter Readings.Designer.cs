@@ -44,18 +44,20 @@
             // txtWaterUsed
             // 
             this.txtWaterUsed.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWaterUsed.Location = new System.Drawing.Point(317, 234);
+            this.txtWaterUsed.Location = new System.Drawing.Point(423, 288);
+            this.txtWaterUsed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtWaterUsed.Name = "txtWaterUsed";
-            this.txtWaterUsed.Size = new System.Drawing.Size(259, 44);
+            this.txtWaterUsed.Size = new System.Drawing.Size(192, 53);
             this.txtWaterUsed.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(61, 237);
+            this.label1.Location = new System.Drawing.Point(81, 292);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 37);
+            this.label1.Size = new System.Drawing.Size(245, 46);
             this.label1.TabIndex = 1;
             this.label1.Text = "Water used:";
             // 
@@ -63,18 +65,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 294);
+            this.label2.Location = new System.Drawing.Point(80, 362);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(253, 37);
+            this.label2.Size = new System.Drawing.Size(313, 46);
             this.label2.TabIndex = 2;
             this.label2.Text = "Water recycled:";
             // 
             // txtWaterRecycle
             // 
             this.txtWaterRecycle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWaterRecycle.Location = new System.Drawing.Point(339, 294);
+            this.txtWaterRecycle.Location = new System.Drawing.Point(452, 362);
+            this.txtWaterRecycle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtWaterRecycle.Name = "txtWaterRecycle";
-            this.txtWaterRecycle.Size = new System.Drawing.Size(237, 44);
+            this.txtWaterRecycle.Size = new System.Drawing.Size(315, 53);
             this.txtWaterRecycle.TabIndex = 3;
             // 
             // btnGenerateBills
@@ -82,9 +86,10 @@
             this.btnGenerateBills.BackColor = System.Drawing.Color.Blue;
             this.btnGenerateBills.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateBills.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGenerateBills.Location = new System.Drawing.Point(610, 234);
+            this.btnGenerateBills.Location = new System.Drawing.Point(813, 288);
+            this.btnGenerateBills.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGenerateBills.Name = "btnGenerateBills";
-            this.btnGenerateBills.Size = new System.Drawing.Size(178, 97);
+            this.btnGenerateBills.Size = new System.Drawing.Size(237, 119);
             this.btnGenerateBills.TabIndex = 4;
             this.btnGenerateBills.Text = "Generate Bills";
             this.btnGenerateBills.UseVisualStyleBackColor = false;
@@ -94,9 +99,10 @@
             this.btnExit.BackColor = System.Drawing.Color.Red;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(649, 378);
+            this.btnExit.Location = new System.Drawing.Point(865, 465);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(111, 50);
+            this.btnExit.Size = new System.Drawing.Size(148, 62);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -106,9 +112,10 @@
             this.btnHome.BackColor = System.Drawing.Color.Blue;
             this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnHome.Location = new System.Drawing.Point(12, 12);
+            this.btnHome.Location = new System.Drawing.Point(16, 15);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(120, 62);
+            this.btnHome.Size = new System.Drawing.Size(160, 76);
             this.btnHome.TabIndex = 6;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = false;
@@ -117,9 +124,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(60, 106);
+            this.label3.Location = new System.Drawing.Point(80, 130);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 37);
+            this.label3.Size = new System.Drawing.Size(221, 46);
             this.label3.TabIndex = 7;
             this.label3.Text = "Start Date:";
             // 
@@ -127,9 +135,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(61, 162);
+            this.label4.Location = new System.Drawing.Point(81, 199);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(168, 37);
+            this.label4.Size = new System.Drawing.Size(206, 46);
             this.label4.TabIndex = 8;
             this.label4.Text = "End Date:";
             // 
@@ -137,24 +146,26 @@
             // 
             this.dtpStartDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpStartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpStartDate.Location = new System.Drawing.Point(256, 99);
+            this.dtpStartDate.Location = new System.Drawing.Point(341, 122);
+            this.dtpStartDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpStartDate.Name = "dtpStartDate";
-            this.dtpStartDate.Size = new System.Drawing.Size(320, 44);
+            this.dtpStartDate.Size = new System.Drawing.Size(425, 53);
             this.dtpStartDate.TabIndex = 9;
             // 
             // dtpEndDate
             // 
             this.dtpEndDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpEndDate.Location = new System.Drawing.Point(256, 162);
+            this.dtpEndDate.Location = new System.Drawing.Point(341, 199);
+            this.dtpEndDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpEndDate.Name = "dtpEndDate";
-            this.dtpEndDate.Size = new System.Drawing.Size(320, 44);
+            this.dtpEndDate.Size = new System.Drawing.Size(425, 53);
             this.dtpEndDate.TabIndex = 10;
             // 
             // frmMeterReadings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.dtpEndDate);
             this.Controls.Add(this.dtpStartDate);
             this.Controls.Add(this.label4);
@@ -166,6 +177,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtWaterUsed);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmMeterReadings";
             this.Text = "Meter Readings";
             this.ResumeLayout(false);

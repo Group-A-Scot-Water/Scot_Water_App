@@ -63,7 +63,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.Blue;
+            this.btnExit.BackColor = System.Drawing.Color.LightSteelBlue;
             resources.ApplyResources(this.btnExit, "btnExit");
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnExit.Name = "btnExit";
