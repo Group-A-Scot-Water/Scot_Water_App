@@ -80,7 +80,9 @@
             this.label2.Name = "label2";
             // 
             // pictureBox1
-            //
+            // 
+            this.pictureBox1.Image = global::Scot_Water_Application.Properties.Resources.Scot_Water_Company_Logo_removebg_preview;
+            this.pictureBox1.InitialImage = global::Scot_Water_Application.Properties.Resources.Scot_Water_Company_Logo_removebg_preview;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
