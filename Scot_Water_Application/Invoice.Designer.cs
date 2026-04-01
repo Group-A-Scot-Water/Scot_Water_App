@@ -73,6 +73,7 @@
             this.lblSubTotal = new System.Windows.Forms.Label();
             this.lblVAT = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.btnGenerate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,7 +141,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(819, 103);
+            this.label9.Location = new System.Drawing.Point(826, 176);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(133, 29);
@@ -151,7 +152,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(715, 139);
+            this.label10.Location = new System.Drawing.Point(734, 217);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(234, 29);
@@ -190,7 +191,7 @@
             // 
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(275, 284);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(765, 390);
             this.listView1.TabIndex = 13;
@@ -199,10 +200,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Scot_Water_Application.Properties.Resources.Scot_Water_Company_Logo_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(1064, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(991, 13);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(188, 163);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -243,7 +244,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(489, 346);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 18;
@@ -251,7 +252,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(489, 398);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(132, 22);
             this.textBox2.TabIndex = 19;
@@ -259,7 +260,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(489, 447);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(132, 22);
             this.textBox3.TabIndex = 20;
@@ -267,7 +268,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(489, 500);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(132, 22);
             this.textBox4.TabIndex = 21;
@@ -431,11 +432,11 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(1004, 703);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(33, 705);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 64);
             this.button1.TabIndex = 38;
@@ -448,7 +449,7 @@
             this.btnScotwater.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnScotwater.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnScotwater.Location = new System.Drawing.Point(56, 11);
-            this.btnScotwater.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnScotwater.Margin = new System.Windows.Forms.Padding(4);
             this.btnScotwater.Name = "btnScotwater";
             this.btnScotwater.Size = new System.Drawing.Size(300, 68);
             this.btnScotwater.TabIndex = 39;
@@ -523,11 +524,24 @@
             this.lblTotal.Size = new System.Drawing.Size(0, 16);
             this.lblTotal.TabIndex = 46;
             // 
+            // btnGenerate
+            // 
+            this.btnGenerate.BackColor = System.Drawing.Color.Blue;
+            this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGenerate.Location = new System.Drawing.Point(962, 693);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(217, 64);
+            this.btnGenerate.TabIndex = 47;
+            this.btnGenerate.Text = "Generate";
+            this.btnGenerate.UseVisualStyleBackColor = false;
+            // 
             // frmInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 782);
+            this.ClientSize = new System.Drawing.Size(1192, 782);
+            this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblVAT);
             this.Controls.Add(this.lblSubTotal);
@@ -573,7 +587,7 @@
             this.Controls.Add(this.lblBillTo);
             this.Controls.Add(this.lblCompanyAddress);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInvoice";
             this.Text = "Invoice";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -628,5 +642,6 @@
         private System.Windows.Forms.Label lblSubTotal;
         private System.Windows.Forms.Label lblVAT;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Button btnGenerate;
     }
 }

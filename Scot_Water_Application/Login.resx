@@ -211,13 +211,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>976, 673</value>
+    <value>34, 655</value>
   </data>
   <data name="btnExit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 81</value>
+    <value>147, 71</value>
   </data>
   <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
