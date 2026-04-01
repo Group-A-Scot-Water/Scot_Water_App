@@ -63,6 +63,8 @@
       <DependentUpon>Billing.cs</DependentUpon>
     </Compile>
     <Content Include="documents\functions.txt" />
+    <Compile Include="Functions\commonMethods.cs" />
+    <Compile Include="Functions\globalVariables.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

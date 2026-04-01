@@ -7,6 +7,31 @@
 6. frm_changeWaterCharge
 7. frm_changeWaterLevel
 
+//============================================================================//
+//=============================  BRANCHES  ===================================//
+//============================================================================//
+
+BRANCHES				PIC (person to manage to maintain the branch)
+Forms					Pabitra
+global-variables		Jonas
+functions				Ching
+master					Kyle
+
+
+
+//============================================================================//
+//=============================  THE PLAN  ===================================//
+//============================================================================//
+
+1. Create a folder called "Functions"
+
+2. In this folder, create AT LEAST 2 files: 
+	i. globalVariables.cs -> to store the variables globally
+	ii. commonMethods.cs -> to store the functions to be used globally
+
+	** 
+
+
 
 //============================================================================//
 //========================global variables====================================//
