@@ -44,8 +44,8 @@
             this.btnViewBusinesses.BackColor = System.Drawing.Color.Blue;
             this.btnViewBusinesses.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewBusinesses.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnViewBusinesses.Location = new System.Drawing.Point(31, 86);
-            this.btnViewBusinesses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnViewBusinesses.Location = new System.Drawing.Point(13, 50);
+            this.btnViewBusinesses.Margin = new System.Windows.Forms.Padding(4);
             this.btnViewBusinesses.Name = "btnViewBusinesses";
             this.btnViewBusinesses.Size = new System.Drawing.Size(450, 121);
             this.btnViewBusinesses.TabIndex = 0;
@@ -57,8 +57,8 @@
             this.btnMeterReadings.BackColor = System.Drawing.Color.Blue;
             this.btnMeterReadings.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeterReadings.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMeterReadings.Location = new System.Drawing.Point(31, 233);
-            this.btnMeterReadings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMeterReadings.Location = new System.Drawing.Point(11, 195);
+            this.btnMeterReadings.Margin = new System.Windows.Forms.Padding(4);
             this.btnMeterReadings.Name = "btnMeterReadings";
             this.btnMeterReadings.Size = new System.Drawing.Size(452, 123);
             this.btnMeterReadings.TabIndex = 1;
@@ -70,8 +70,8 @@
             this.btnBilling.BackColor = System.Drawing.Color.Blue;
             this.btnBilling.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBilling.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBilling.Location = new System.Drawing.Point(31, 375);
-            this.btnBilling.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBilling.Location = new System.Drawing.Point(13, 343);
+            this.btnBilling.Margin = new System.Windows.Forms.Padding(4);
             this.btnBilling.Name = "btnBilling";
             this.btnBilling.Size = new System.Drawing.Size(452, 122);
             this.btnBilling.TabIndex = 2;
@@ -84,7 +84,7 @@
             this.btnExitMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExitMain.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnExitMain.Location = new System.Drawing.Point(1301, 343);
-            this.btnExitMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExitMain.Margin = new System.Windows.Forms.Padding(4);
             this.btnExitMain.Name = "btnExitMain";
             this.btnExitMain.Size = new System.Drawing.Size(133, 62);
             this.btnExitMain.TabIndex = 3;
@@ -95,7 +95,7 @@
             // 
             this.pictureBox1.Image = global::Scot_Water_Application.Properties.Resources.Scot_Water_Company_Logo_removebg_preview;
             this.pictureBox1.Location = new System.Drawing.Point(1298, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(136, 107);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -107,8 +107,8 @@
             this.btnChangeWaterLavel.BackColor = System.Drawing.Color.Blue;
             this.btnChangeWaterLavel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeWaterLavel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnChangeWaterLavel.Location = new System.Drawing.Point(31, 521);
-            this.btnChangeWaterLavel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChangeWaterLavel.Location = new System.Drawing.Point(13, 494);
+            this.btnChangeWaterLavel.Margin = new System.Windows.Forms.Padding(4);
             this.btnChangeWaterLavel.Name = "btnChangeWaterLavel";
             this.btnChangeWaterLavel.Size = new System.Drawing.Size(452, 121);
             this.btnChangeWaterLavel.TabIndex = 5;
@@ -120,8 +120,8 @@
             this.btnChangeCharge.BackColor = System.Drawing.Color.Blue;
             this.btnChangeCharge.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeCharge.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnChangeCharge.Location = new System.Drawing.Point(31, 670);
-            this.btnChangeCharge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChangeCharge.Location = new System.Drawing.Point(13, 643);
+            this.btnChangeCharge.Margin = new System.Windows.Forms.Padding(4);
             this.btnChangeCharge.Name = "btnChangeCharge";
             this.btnChangeCharge.Size = new System.Drawing.Size(452, 121);
             this.btnChangeCharge.TabIndex = 6;
@@ -132,7 +132,7 @@
             // 
             this.checkedListBox1.BackColor = System.Drawing.SystemColors.Highlight;
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(12, 23);
+            this.checkedListBox1.Location = new System.Drawing.Point(0, 12);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(495, 888);
             this.checkedListBox1.TabIndex = 7;
@@ -152,7 +152,7 @@
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnExitMain);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMainMenu";
             this.Text = "Main Menu";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
