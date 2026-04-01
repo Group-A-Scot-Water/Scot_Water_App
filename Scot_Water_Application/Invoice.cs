@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Scot_Water_Application
 {
-    public partial class frmBilling : Form
+    public partial class Invoice : Form
     {
-        public frmBilling()
+        public Invoice()
         {
             InitializeComponent();
         }

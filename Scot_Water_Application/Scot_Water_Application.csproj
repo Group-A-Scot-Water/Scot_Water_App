@@ -56,13 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Billing.cs">
+    <Content Include="documents\functions.txt" />
+    <Compile Include="Invoice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Billing.Designer.cs">
-      <DependentUpon>Billing.cs</DependentUpon>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
     </Compile>
-    <Content Include="documents\functions.txt" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,8 +93,8 @@
     <Compile Include="View Businesses.Designer.cs">
       <DependentUpon>View Businesses.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Billing.resx">
-      <DependentUpon>Billing.cs</DependentUpon>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
