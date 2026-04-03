@@ -62,6 +62,7 @@
     <Compile Include="Billing.Designer.cs">
       <DependentUpon>Billing.cs</DependentUpon>
     </Compile>
+    <Content Include="documents\document2.txt" />
     <Content Include="documents\functions.txt" />
     <Compile Include="Functions\commonMethods.cs" />
     <Compile Include="Functions\globalVariables.cs" />
