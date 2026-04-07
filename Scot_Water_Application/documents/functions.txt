@@ -7,6 +7,9 @@
 6. frm_changeWaterCharge
 7. frm_changeWaterLevel
 
+
+**** PIC = PERSON IN CHARGE ****
+
 //============================================================================//
 //=============================  BRANCHES  ===================================//
 //============================================================================//
@@ -29,13 +32,15 @@ master					Kyle
 	i. globalVariables.cs -> to store the variables globally
 	ii. commonMethods.cs -> to store the functions to be used globally
 
-	** 
+
 
 
 
 //============================================================================//
-//========================global variables====================================//
+//======================== 2.i. global variables===============================//
 //============================================================================//
+	
+	PIC. JONAS
 
 	string[] errorMessages = [
 		"Invalid email format. Please enter a valid email address.",
@@ -48,19 +53,30 @@ master					Kyle
 	Buiness obj_selectedBusiness; // to store the business information retrieved from database, and pass it to frm_viewBusiness and frm_generateBill
 
 //============================================================================//
-//========================common methods======================================//
+//======================== 2.ii. common methods================================//
 //============================================================================//
+	
 
 	1. validateEmail(string) => boolean
 
+		PIC = JONAS
+
 	2. validatePassword(string) => boolean
 
+		PIC = JONAS
+
 	3. exitApplication() => void	
+		
+		PIC = PABITRA
 
 	// get the list of business name from database
 	4. loadBusinessNames() =>  string[]
 
+		PIC = KYLE
+
 	5. getBusinessInfo(string businessId) => object class Business{}
+
+		PIC = KYLE
 
 	6. displayBusinessInfo(obj business, frmName){
 		if frmName == "frm_viewBusiness" {
@@ -70,12 +86,25 @@ master					Kyle
 			}
 	    }
 
+		PIC = PABITRA
+
 	7. validateMeterReading(int reading) => boolean
 		if meterReading is a positive integer, return true, else return false
 
+		PIC = JONAS
+
 	8. loadWaterCharge() => object class WaterCharge{} // including consumeCharge, recycleCharge, and waterLevelCharge
 
+		PIC = KYLE
+
 	9. displayErrorMessage(string message) => void
+
+		PIC = NATHAN
+
+	10. buttonHoverEffect(button) => void
+		// change the button color when mouse hover, and change back to original color when mouse leave
+
+		PIC = CHING
 
 //============================================================================//
 //========================methods for frm_login===============================//
@@ -83,11 +112,11 @@ master					Kyle
 
 	1. valiateLogin(){
 		if validateEmail() && validatePassword() {
-			return true;
-		} else {
-			return false;
-		}
-	}
+				return true;
+			} else {
+				return false;
+			}
+	    }
 
 	2. exitApplication()
 
@@ -125,21 +154,23 @@ master					Kyle
 
 	2. submitMeterReading(string businessId, int meterReading, int recycleReading) => {
 		if validateMeterReading(meterReading) &&  validateMeterReading(recycleReading) {
-			// submit the meter reading to database
-			if 3. submitMeterReadingToDatabase(businessId, meterReading, recycleReading) == true {
-				// display success message to user
-				return true;
+				// submit the meter reading to database
+				if 3. submitMeterReadingToDatabase(businessId, meterReading, recycleReading) == true {
+					// display success message to user
+					return true;
+				} else {
+					// display error message to user
+					displayErrorMessage()
+					return false
+				}
 			} else {
 				// display error message to user
 				displayErrorMessage()
-				return false
+				return false;
 			}
-		} else {
-			// display error message to user
-			displayErrorMessage()
-			return false;
 		}
-	}
+
+		PIC = KYLE
 
 	*** for 3. submitMeterReadingToDatabase(), except the 3 passed in parameters,***
 	*** it will need to generate a timestamp/ date_time to record when the meter reading is submitted ***
