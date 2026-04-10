@@ -15,10 +15,12 @@
 //============================================================================//
 
 BRANCHES				PIC (person to manage to maintain the branch)
-Forms					Pabitra
-global-variables		Jonas
-functions				Ching
-master					Kyle
+1. Forms					Pabitra
+2. global-variables		Jonas
+3. functions-1				Ching
+4. functions-2				Nathan
+5. functions-3				Jack
+6. master					Kyle
 
 
 
@@ -40,7 +42,6 @@ master					Kyle
 //======================== 2.i. global variables===============================//
 //============================================================================//
 	
-	PIC. JONAS
 
 	string[] errorMessages = [
 		"Invalid email format. Please enter a valid email address.",
@@ -52,6 +53,9 @@ master					Kyle
 	string selectedBusinessId; // to store the businessId selected from frm_viewBusiness, and pass it to frm_addMeterReading and frm_generateBill
 	Buiness obj_selectedBusiness; // to store the business information retrieved from database, and pass it to frm_viewBusiness and frm_generateBill
 
+	**PIC. JONAS
+
+
 //============================================================================//
 //======================== 2.ii. common methods================================//
 //============================================================================//
@@ -59,24 +63,24 @@ master					Kyle
 
 	1. validateEmail(string) => boolean
 
-		PIC = JONAS
+		**PIC = JONAS
 
 	2. validatePassword(string) => boolean
 
-		PIC = JONAS
+		**PIC = JONAS
 
 	3. exitApplication() => void	
 		
-		PIC = PABITRA
+		**PIC = PABITRA
 
 	// get the list of business name from database
 	4. loadBusinessNames() =>  string[]
 
-		PIC = KYLE
+		**PIC = KYLE
 
 	5. getBusinessInfo(string businessId) => object class Business{}
 
-		PIC = KYLE
+		**PIC = KYLE
 
 	6. displayBusinessInfo(obj business, frmName){
 		if frmName == "frm_viewBusiness" {
@@ -86,30 +90,32 @@ master					Kyle
 			}
 	    }
 
-		PIC = PABITRA
+		**PIC = PABITRA
 
 	7. validateMeterReading(int reading) => boolean
 		if meterReading is a positive integer, return true, else return false
 
-		PIC = JONAS
+		**PIC = JONAS
 
 	8. loadWaterCharge() => object class WaterCharge{} // including consumeCharge, recycleCharge, and waterLevelCharge
 
-		PIC = KYLE
+		**PIC = KYLE
 
 	9. displayErrorMessage(string message) => void
 
-		PIC = NATHAN
+		**PIC = NATHAN
 
 	10. buttonHoverEffect(button) => void
 		// change the button color when mouse hover, and change back to original color when mouse leave
 
-		PIC = CHING
+		**PIC = CHING
+
+
 
 //============================================================================//
 //========================methods for frm_login===============================//
 //============================================================================//
-
+	
 	1. valiateLogin(){
 		if validateEmail() && validatePassword() {
 				return true;
@@ -118,7 +124,11 @@ master					Kyle
 			}
 	    }
 
+		**PIC = JONAS
+
 	2. exitApplication()
+		
+		**PIC = PABITRA
 
 //============================================================================//
 //========================methods for frm_main================================//
@@ -129,6 +139,8 @@ master					Kyle
 
 	1. exitApplication()
 
+		**PIC = PABITRA
+
 //============================================================================//
 //========================methods for frm_viewBusiness========================//
 //============================================================================//
@@ -136,11 +148,17 @@ master					Kyle
 	//load the list of business into drop down menu
 	1. loadBusinessNames() 
 
+		**PIC = KYLE
+
 	//pass into businessId, get the business information from database
 	2. getBusinessInfo(string businessId) => Business obj_selectedBusiness
 
+		**PIC = KYLE
+
 	//  display business info into the form
 	3. displayBusinessInfo(object business) => void
+
+		**PIC = PABITRA
 
 	4. exitApplication()
 
@@ -151,6 +169,8 @@ master					Kyle
 	1. loadBusinessNames() 
 		if businessId has been passed from frm_viewBusiness, 
 		choose corresponding business name in the drop down menu
+
+		**PIC = KYLE
 
 	2. submitMeterReading(string businessId, int meterReading, int recycleReading) => {
 		if validateMeterReading(meterReading) &&  validateMeterReading(recycleReading) {
@@ -170,7 +190,7 @@ master					Kyle
 			}
 		}
 
-		PIC = KYLE
+		**PIC = KYLE
 
 	*** for 3. submitMeterReadingToDatabase(), except the 3 passed in parameters,***
 	*** it will need to generate a timestamp/ date_time to record when the meter reading is submitted ***
@@ -185,9 +205,13 @@ master					Kyle
 
 	1. loadWaterCharge() 
 
+		**PIC = KYLE
+
 	2. loadBusinessNames() 
 		if businessId has been passed from frm_viewBusiness, 
 		choose corresponding business name in the drop down menu
+
+		**PIC = KYLE
 
 	3. getBusinessInfo(string businessId) => {
 			//get the business information from the global variable selectedBusiness
@@ -198,12 +222,39 @@ master					Kyle
 
 			return obj_selectedBusiness
 	   }
+
+	   **PIC = KYLE
 		
-	5. loadMeterReading(string businessId) => return [waterMeterReading, recycleMeterReading]
+	5. validateMeterReading(waterMeterReading, recycleMeterReading) =>  boolean
 
-	6. calculateBill(waterMeterRead, recycleMeterReading, obj_waterCharge) => return totalAmount
+		**PIC = JONAS
 
-	7. generateBill(Business obj_business, waterMeterRead, recycleMeterReading, totalAmount) => void
+	6. calculateBill(waterMeterRead, recycleMeterReading, obj_waterCharge) =>  totalAmount
+
+		**PIC = PABITRA
+
+	7. generateBill(Business obj_business, waterMeterRead, recycleMeterReading, totalAmount) => {
+
+			1. submitBillToDatabase(businessId, waterMeterRead, recycleMeterReading, totalAmount) => boolean
+				** PIC = KYLE
+
+			2. generateBillForm(businessInfo, waterMeterRead, recycleMeterReading, totalAmount) => boolean
+				
+				if submitBillToDatabase() && generateBillPDF() {
+					// display success message to user
+					return true;
+				} else {
+					// display error message to user
+					displayErrorMessage()
+
+				** PIC = CHING
+
+			return boolean;
+			
+		}
+
+			** PIC = CHING
+
 
 	8. exitApplication()
 
@@ -211,22 +262,36 @@ master					Kyle
 //========================methods for frm_changeWaterCharge===================//
 //============================================================================//
 
-	1. loadMeterReading()
+	1. loadMeterReading() => object class WaterCharge{} // including consumeCharge, recycleCharge, and waterLevelCharge
 
-	2. validateNewCharge(float reading) // for both consumedWater and recycleWater, 
+		**PIC = KYLE
+
+	2. displayCurrentWaterCharge(object waterCharge) => void
+		// display current water charge into the form w/ corresponding labels
+
+		**PIC = PABITRA
+
+	3. validateNewCharge(float reading) => boolean // for both consumedWater and recycleWater, 
+		
+		**PIC = JONAS
 	
-	3. submitNewWaterCharge(new) => boolean
+	4. submitNewWaterCharge(new) => boolean
 
-	4. exitApplication()
+		** PIC = KYLE
+
+	5. exitApplication()
 
 
 //============================================================================//
 //========================methods for frm_changeWaterLevel====================//
 //============================================================================//
 
-	1. loadCurrentWaterLevel()
+	1. loadCurrentWaterLevel() => object class WaterLevel{} // including waterLevel and waterLevelCharge
+
+		** PIC = KYLE
 
 	2. validateNewWaterLevel(float reading) 
+
 	
 	3. submitNewWaterLevel() => boolean
 
