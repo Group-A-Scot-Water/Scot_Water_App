@@ -15,12 +15,15 @@
 //============================================================================//
 
 BRANCHES				PIC (person to manage to maintain the branch)
-1. Forms					Pabitra
-2. global-variables		Jonas
-3. functions-1				Ching
-4. functions-2				Nathan
-5. functions-3				Jack
-6. master					Kyle
+1. Forms					PABITRA
+2. global-variables			JONAS
+3. input-validation			JONAS
+4. database-IO				KYLE
+5. calculations				PABITRA
+5. data-display				JACK
+6. error-message-display	NATHAN
+7. UI-effect				CHING
+9. master					KYLE
 
 
 
@@ -30,9 +33,16 @@ BRANCHES				PIC (person to manage to maintain the branch)
 
 1. Create a folder called "Functions"
 
-2. In this folder, create AT LEAST 2 files: 
-	i. globalVariables.cs -> to store the variables globally
-	ii. commonMethods.cs -> to store the functions to be used globally
+2. In this folder, create AT LEAST 8 files: 
+	i.		globalVariables.cs -> to store the variables globally
+	ii.		inputValidation.cs -> to store the functions related to input validation, such as validateEmail(), validatePassword(), validateMeterReading(), etc.
+	iii.	databaseIO.cs -> to store the functions related to database input and output, such as loadBusinessNames(), getBusinessInfo(), submitMeterReadingToDatabase(), submitBillToDatabase(), etc.
+	iv.		calculations.cs -> to store the functions related to calculations, such as calculateBill()
+	v.		dataDisplay.cs -> to store the functions related to displaying data into the forms, such as displayBusinessInfo(), displayCurrentWaterCharge(), etc.
+	vi.		errorMessageDisplay.cs -> to store the functions related to displaying error messages, such as displayErrorMessage()
+	vii.	UIEffect.cs -> to store the functions related to UI effects, such as buttonHoverEffect()
+	viii.	commonMethods.cs -> * to store the functions to be used globally 
+								** CHING will consolidate all nessary functions from the above files into this file
 
 
 
@@ -42,18 +52,19 @@ BRANCHES				PIC (person to manage to maintain the branch)
 //======================== 2.i. global variables===============================//
 //============================================================================//
 	
-
 	string[] errorMessages = [
 		"Invalid email format. Please enter a valid email address.",
 		"Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.",
 		"Meter reading must be a positive integer.",
 		"Failed to submit meter reading. Please try again."
 	]
+	// **PIC. JONAS + NATHAN
+
 
 	string selectedBusinessId; // to store the businessId selected from frm_viewBusiness, and pass it to frm_addMeterReading and frm_generateBill
+	
 	Buiness obj_selectedBusiness; // to store the business information retrieved from database, and pass it to frm_viewBusiness and frm_generateBill
 
-	**PIC. JONAS
 
 
 //============================================================================//
@@ -61,17 +72,14 @@ BRANCHES				PIC (person to manage to maintain the branch)
 //============================================================================//
 	
 
-	1. validateEmail(string) => boolean
+	1.	validateEmail(string) => boolean
+		//**PIC = JONAS
 
-		**PIC = JONAS
-
-	2. validatePassword(string) => boolean
-
-		**PIC = JONAS
+	2.	validatePassword(string) => boolean
+		//**PIC = JONAS
 
 	3. exitApplication() => void	
-		
-		**PIC = PABITRA
+		//**PIC = CHING
 
 	// get the list of business name from database
 	4. loadBusinessNames() =>  string[]
@@ -269,11 +277,11 @@ BRANCHES				PIC (person to manage to maintain the branch)
 	2. displayCurrentWaterCharge(object waterCharge) => void
 		// display current water charge into the form w/ corresponding labels
 
-		**PIC = PABITRA
+		** PIC = PABITRA
 
 	3. validateNewCharge(float reading) => boolean // for both consumedWater and recycleWater, 
 		
-		**PIC = JONAS
+		** PIC = JONAS
 	
 	4. submitNewWaterCharge(new) => boolean
 
@@ -292,7 +300,11 @@ BRANCHES				PIC (person to manage to maintain the branch)
 
 	2. validateNewWaterLevel(float reading) 
 
+		** PIC = JONAS
+
 	
 	3. submitNewWaterLevel() => boolean
+
+		** PIC	= KYLE
 
 	4. exitApplication()
